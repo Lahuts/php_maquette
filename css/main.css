@@ -45,7 +45,7 @@ main {
     justify-content: center;
 }
 section {
-    margin: 4rem;
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: #fff;
@@ -60,23 +60,23 @@ h2{
     font-size: 1.8rem;
 }
 
-section>div{
+section>article{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-div>p{
+article>p{
     font-size: 1.6rem;
     margin-top: 0.5rem;
 }
-div>ul{
+article>ul{
     line-height: 2rem;
 }
-div>ul>Li{
+article>ul>Li{
     margin-top: .5rem;
 }
-div>ul>li>p{
+article>ul>li>p{
     font-size: 1.6rem;
 }
 
@@ -102,4 +102,23 @@ footer p{
     padding:1rem;
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+@media (max-width:845px){
+    section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        max-width: fit-content;
+        max-height: fit-content;
+        margin: 0;
+        padding: 0.5rem;
+    }
+    button{
+        margin: 1rem auto auto auto;
+
+    }
+    header ul{
+        display: block;
+    }
 }
