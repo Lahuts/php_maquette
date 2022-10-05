@@ -7,16 +7,23 @@ html{
     height: 100%;
 }
 body {
-    background-color: #2b2a33;
+    background-color: #2d3436;
 }
 header {
-    background-color: azure;
+    background-color: #f1f1f1;
 }
 header h1{
     text-align: center;
     font-size: 2.5rem;
     width: 100%;
+    font-weight: 100;
     margin-bottom: 1rem;
+}
+h1:before{
+    content: url(../asset/a_15.png);
+    position: relative;
+    top: .5rem;
+    right: .5rem;
 }
 header ul {
     display: flex;
@@ -26,45 +33,73 @@ header ul {
     background-color: #fff;
 
 }
+header ul li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
 main {
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
 }
 section {
-    margin: 2rem;
+    margin: 4rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: #fff;
-    max-width: 60rem;
+    max-width: 80rem;
     max-height: 40rem;
+    padding-left: 2rem;
+    border-radius: .5rem;
 }
 h2{
+    margin-top: 1rem;
     font-weight: 500;
+    font-size: 1.8rem;
 }
+
 section>div{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 div>p{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-top: 0.5rem;
 }
 div>ul{
     line-height: 2rem;
 }
+div>ul>Li{
+    margin-top: .5rem;
+}
 div>ul>li>p{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 button{
+    display: flex;
+    align-items: center;
     width: fit-content;
     padding: 1rem;
-    background-color: orange;
+    background-color: #cf4717;
     color: #fff;
     margin:auto 1rem 1rem auto;
+    border-radius: .5rem;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+footer p{
+    padding:1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
