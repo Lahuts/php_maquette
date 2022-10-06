@@ -28,16 +28,20 @@ h1:before{
 header ul {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 0rem;
     font-size: 1.6rem;
     background-color: #fff;
-
+    gap:2rem;
 }
 header ul li {
     display: flex;
     gap: 1rem;
     align-items: center;
     padding: 1rem;
+}
+nav ul li:hover{
+    transition: 0.5s;
+    background-color: rgb(210, 210, 210);
 }
 main {
     display: flex;
@@ -123,5 +127,30 @@ footer p{
     }
     article{
         margin-left: 1rem; ;
+    }
+}
+@media (orientation: landscape) and (max-width : 845px) {
+    header nav ul li {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+    }
+    header ul {
+        display: flex;
+        justify-content: center;
+        gap: 0rem;
+        font-size: 1.6rem;
+        background-color: #fff;
+        gap:2rem;
+    }
+    main{
+        display: block;
+    }
+    section{
+        max-width: 100%;
+    }
+    section img{
+        justify-self: center;
     }
 }
