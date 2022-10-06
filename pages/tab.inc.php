@@ -17,7 +17,10 @@ print "<p>".$_deviceTab[1]["Description"]."</p>";
 print '<ul>';
 foreach($_deviceTab as $_key => $_index){
     foreach($_index as $_key_1 => $_valeur){
-        print "<li><p><b>".$_key_1." </b>".$_valeur."<p></li>";
+        if($_key_1 != "Modele" || $_key_1 != "Description"){
+            print "<li><p><b>".$_key_1." </b>".$_valeur."<p></li>";
+        }
+        
     }
 }
 print "</ul>";
